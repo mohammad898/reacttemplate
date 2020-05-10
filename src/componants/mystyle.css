@@ -1,0 +1,27 @@
+.Abo {
+    text-align: center;
+    background-color: rgb(230, 173, 173);
+    border-left: 20px groove rgb(0, 255, 170);
+    border-top: 20px groove rgb(145, 255, 0);;
+  }
+  
+  
+  
+ 
+  
+  .Pro{
+
+    text-align: center;
+    background-color: rgb(173, 214, 230);
+    border: 20px outset rgb(255, 0, 0);
+  padding: 10px;
+  margin: 5px;
+  }
+  .Fir{
+
+    text-align: center;
+    background-color: tomato;
+    border: 20px solid rgb(0, 174, 255);
+  padding: 10px;
+  margin: 5px;
+  }
