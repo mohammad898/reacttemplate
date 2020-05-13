@@ -1,7 +1,7 @@
 //import React from 'react';
 import ReactDOM from 'react-dom';  
 import 'bootstrap/dist/css/bootstrap.min.css'; 
-import { BrowserRouter as Router, Route, Link, NavLink, Switch } from 'react-router-dom'  
+import { BrowserRouter as Router, Route, NavLink, Switch } from 'react-router-dom'  
 import React, { Suspense, lazy } from 'react';  
 import './index.css';
 
@@ -32,7 +32,7 @@ const routing = (
             }>Home</NavLink>  
           </li>  
           <li>  
-            <NavLink to="/about" exact activeStyle={  
+            <NavLink to="/MyApp" exact activeStyle={  
                {color:'green'}  
             }>About</NavLink>  
           </li>  
@@ -55,7 +55,7 @@ const routing = (
         <Suspense fallback={<div>Loading...</div>}>  
          <Switch> 
          <Route exact path="/" component={Home} />  
-        <Route path="/about" component={About} />  
+        <Route path="/MyApp" component={About} />  
         <Route path="/product" component={Product} /> 
         <Route path="/nav" component={Nav} />
         <Route path="/first" component={First} />  
