@@ -1,20 +1,24 @@
-//import React from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom';  
-import 'bootstrap/dist/css/bootstrap.min.css'; 
-import { BrowserRouter as Router, Route, NavLink, Switch } from 'react-router-dom'  
-import React, { Suspense, lazy } from 'react';  
-import './index.css';
 
-//import About from './componants/About'
-import Product from './componants/Product'
-//import Nav from './componants/Nav'
-import First from './componants/First'
-import Notfound from './componants/Notfound'  
+
+import { BrowserRouter as Router, Route, NavLink, Switch } from 'react-router-dom'  
+  
+
+import './index.css';
+import Home from './App';
+import About from './componants/About'
+import Training from './componants/Training'
+import Services from './componants/Services'
+import Career from './componants/Career'
+import Contact from './componants/Contact'
+import Notfound from './componants/Notfound' 
+ 
 import * as serviceWorker from './serviceWorker';
 
-const Home = lazy(() => import('./App'));  
-const About = lazy(() => import('./componants/About'));  
-const Nav = lazy(() => import('./componants/Nav'));
+//const Home = lazy(() => import('./App'));  
+//const About = lazy(() => import('./componants/About'));  
+//const Training = lazy(() => import('./componants/Training'));
 
 
 
@@ -29,39 +33,46 @@ const routing = (
           <li>  
             <NavLink to="/" exact activeStyle={  
                {color:'red'}  
-            }>Home</NavLink>  
+            }>HOME</NavLink>  
           </li>  
           <li>  
-            <NavLink to="/MyApp" exact activeStyle={  
+            <NavLink to="/About" exact activeStyle={  
                {color:'green'}  
-            }>About</NavLink>  
+            }>ABOUT US</NavLink>  
           </li>  
           <li>  
-            <NavLink to="/product" exact activeStyle={  
+            <NavLink to="/Services" exact activeStyle={  
                {color:'magenta'}  
-            }>product</NavLink>  
+            }>SERVICES</NavLink>  
           </li> 
           <li>  
-            <NavLink to="/nav" exact activeStyle={  
+            <NavLink to="/Training" exact activeStyle={  
                {color:'magenta'}  
-            }>Nav</NavLink>  
-          </li>  
+            }>TRAINING</NavLink>  
+          </li> 
           <li>  
-            <NavLink to="/first" exact activeStyle={  
+            <NavLink to="/Career" exact activeStyle={  
                {color:'magenta'}  
-            }>First</NavLink>  
+            }>CAREER</NavLink>  
+          </li> 
+          <li>  
+            <NavLink to="/Contact" exact activeStyle={  
+               {color:'magenta'}  
+            }>CONTACT US</NavLink>  
           </li>  
         </ul> 
-        <Suspense fallback={<div>Loading...</div>}>  
+         
          <Switch> 
-         <Route exact path="/" component={Home} />  
-        <Route path="/MyApp" component={About} />  
-        <Route path="/product" component={Product} /> 
-        <Route path="/nav" component={Nav} />
-        <Route path="/first" component={First} />  
+         <Route exact path="/" component={Home} />
+         <Route exact path="/MyApp" component={Home} />  
+        <Route path="/About" component={About} />  
+        <Route path="/Services" component={Services} /> 
+        <Route path="/Career" component={Career} />
+        <Route path="/Training" component={Training} />
+        <Route path="/Contact" component={Contact} />  
         <Route component={Notfound} />  
       </Switch>
-      </Suspense>   
+       
     </div>  
   </Router>  
 )  

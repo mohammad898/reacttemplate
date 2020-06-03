@@ -4,9 +4,20 @@ import  './mystyle.css';
 class About extends Component {  
     render() {  
        return (  
-          <div className='Abo'>  
-             <h1>This website in under construction</h1>
-          <h2>Coming soon</h2>
+          <div className='aboutpage'> 
+          <div className='pppp'> 
+            <p>
+            <h1>Who we are </h1>
+
+            Friends Infotech is a global IT and Engineering solutions provider catering to a diverse customer base.
+             We ensure to empower our clients with innovative solutions that add measurable value to business,
+              while adhering to global quality standards. We offer an optimal blend of business processes in 
+              varied domains to enable our customers to meet their corporate goals. Our combination of deep 
+              industry knowledge and expertise in building capabilities on short notice makes us a strategic 
+              partner for our customers. </p>
+
+             
+            </div> 
           </div>  
        );  
     }  
