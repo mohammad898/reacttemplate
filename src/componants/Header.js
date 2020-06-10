@@ -32,6 +32,12 @@ function Header() {
 						</NavLink>
 					</li>
 					<li>
+						<NavLink to="/Tutorial" exact activeStyle={{ color: "red" }}>
+							TUTORIAL
+						</NavLink>
+					</li>
+
+					<li>
 						<NavLink to="/Contact" exact activeStyle={{ color: "red" }}>
 							CONTACT US
 						</NavLink>

@@ -20,7 +20,10 @@ import SignInFrom from "./componants/SignInFrom";
 import Notfound from "./componants/Notfound";
 import Footer from "./componants/Footer";
 import Header from "./componants/Header";
+import Tutorial from "./componants/Tutorial";
+import Testng from "./componants/Testng";
 import * as serviceWorker from "./serviceWorker";
+import BasicFrom from "./componants/BasicFrom";
 
 //const Home = lazy(() => import('./App'));
 //const About = lazy(() => import('./componants/About'));
@@ -41,6 +44,10 @@ const routing = (
 				<Route path="/Contact" component={Contact} />
 				<Route path="/SignupFrom" component={SignupFrom} />
 				<Route path="/SignInFrom" component={SignInFrom} />
+				<Route path="/BasicFrom" component={BasicFrom} />
+				<Route path="/Tutorial" component={Tutorial} />
+				<Route path="/Testng" component={Testng} />
+
 				<Route component={Notfound} />
 			</Switch>
 			<Footer />

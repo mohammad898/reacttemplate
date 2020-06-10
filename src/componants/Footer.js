@@ -4,12 +4,11 @@ import "../App.css";
 export class Footer extends Component {
 	render() {
 		return (
-			<div>
-				<div class="ffoot">
-					<Link to="/Contact">Privacy</Link>
-					<br />
-
-					<Link to="/SignInFrom">Promotion</Link>
+			<div class="footer-page">
+				<div class="d-flex">
+					<div class="p-2 .bg-secondary flex-fill">Flex item 2</div>
+					<div class="p-2 .bg-secondary flex-fill">Flex item 3</div>
+					<div class="p-2 .bg-secondary flex-fill">Flex item 3</div>
 				</div>
 			</div>
 		);
